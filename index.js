@@ -8,7 +8,7 @@ app.get("*/", (req, res) => {
 
   var ip = req.connection.remoteAddress.split(":")[3]
 
-  if(req.originalUrl == "/gay.png") return res.send(`<html> <body> <img src="https://img.c0nfuse.ru/catjpg.jpg"> </body></html>`);
+  if(req.originalUrl == "/gay.png") return res.send(`<html> <body> <h> 1 </h> </body></html>`);
   res.send('вали нахуй от сюда!!!!'); 
   console.log(ip)
 });

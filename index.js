@@ -7,7 +7,9 @@ const fileurl = '/gay.png'
 app.get("*/", (req, res) => {
 
   var ip = req.connection.remoteAddress.split(":")[3]
-
+  // if CF use this shit
+  //var ip = req.headers['cf-connecting-ip']
+  
   if(req.originalUrl == "/gay.png") return res.send(`<html> <body> <h> 1 </h> </body></html>`);
   res.send('вали нахуй от сюда!!!!'); 
   console.log(ip)
